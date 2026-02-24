@@ -20,6 +20,7 @@ namespace KitchenManager.Pages
 
             if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
             {
+               
                 MessageBox.Show("Введите логин и пароль!");
                 return;
             }

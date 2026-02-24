@@ -18,7 +18,7 @@
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Логин" FontSize="18" VerticalAlignment="Center"/>
+                <TextBlock Text="Логин" FontSize="22" VerticalAlignment="Center"/>
                 <TextBox x:Name="TxtLogin" Grid.Column="1"/>
             </Grid>
 
@@ -27,11 +27,11 @@
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Пароль" FontSize="18" VerticalAlignment="Center"/>
+                <TextBlock Text="Пароль" FontSize="22" VerticalAlignment="Center"/>
                 <PasswordBox x:Name="TxtPassword" Grid.Column="1" Height="25"/>
             </Grid>
 
-            <Button Content="Войти" Click="BtnLogin_Click" Width="100" Height="30" />
+            <Button Content="Войти" Click="BtnLogin_Click" Width="140" Height="30" />
         </StackPanel>
         <Image Source="/Resources/unnamed.png" Stretch="Fill" Width="251" Height="132" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Grid>

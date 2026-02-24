@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KitchenManager"
         mc:Ignorable="d"
+        Background="{StaticResource MainBackground}"
        Title="Новая услуга" Height="280" Width="330" MinHeight="280" MinWidth="330"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 
@@ -17,6 +18,6 @@
         <TextBlock Text="Стоимость:"/>
         <TextBox x:Name="TxtPrice" Height="25" Margin="0,0,0,10"/>
 
-        <Button Content="Сохранить" Height="35" Margin="0,15,0,0" Click="BtnSave_Click"/>
+        <Button Content="Сохранить" Height="35" Margin="0,15,0,0" Click="BtnSave_Click" Style="{StaticResource GreenBtnStyle}"/>
     </StackPanel>
 </Window>
