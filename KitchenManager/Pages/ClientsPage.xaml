@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Клиенты" Loaded="Page_Loaded" Background="{StaticResource MainBackground}">
 
-    <Grid Height="315" Width="604">
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
