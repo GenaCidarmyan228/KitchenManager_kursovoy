@@ -1,0 +1,30 @@
+﻿<Page x:Class="KitchenManager.ClientsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Клиенты" Loaded="Page_Loaded" Background="{StaticResource MainBackground}">
+
+    <Grid Height="315" Width="604">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Button Content="Добавить клиента" Width="150" Height="30" Margin="0,0,10,0" Click="BtnAdd_Click" Style="{StaticResource GreenBtnStyle}"/>
+
+            <Button Content="Изменить" Width="100" Height="30" Margin="0,0,10,0" Click="BtnEdit_Click" />
+
+            <Button Content="Удалить" Width="100" Height="30" Click="BtnDelete_Click" Style="{StaticResource RedBtnStyle}"/>
+        </StackPanel>
+
+        <DataGrid x:Name="DGridClients" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" Margin="10" BorderBrush="Gray" BorderThickness="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="*"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="120"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

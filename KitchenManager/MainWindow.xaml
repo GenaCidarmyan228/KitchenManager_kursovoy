@@ -1,0 +1,41 @@
+﻿<Window x:Class="KitchenManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KitchenManager" Height="700" Width="1200" MinHeight="500" MinWidth="800"
+        Icon="/Resources/unnamed.png" 
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="{StaticResource MainBackground}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="Sidebar" Grid.Column="0" Width="200" 
+                Background="{StaticResource SidebarColor}" 
+                BorderBrush="Black" BorderThickness="0,0,1,0"
+                Visibility="Collapsed">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,20,0,0">
+                    <Button Content="Оборудование" Click="BtnEquipment_Click" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="Услуги" Click="BtnServices_Click" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="Заказы" Click="BtnOrders_Click" Style="{StaticResource MenuButtonStyle}"/>
+
+                    <Button x:Name="BtnEmployees" Content="Сотрудники" Click="BtnEmployees_Click" Style="{StaticResource MenuButtonStyle}"/>
+
+                    <Button Content="Клиенты" Click="BtnClients_Click" Style="{StaticResource MenuButtonStyle}"/>
+                </StackPanel>
+
+                <Button Grid.Row="2" Content="Выйти" Click="BtnExit_Click" Height="50" Margin="0,0,0,20" Background="#FFCC80" BorderThickness="0"/>
+            </Grid>
+        </Border>
+
+        <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"/>
+    </Grid>
+</Window>

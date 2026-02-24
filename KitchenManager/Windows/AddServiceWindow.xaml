@@ -1,0 +1,22 @@
+﻿<Window x:Class="KitchenManager.Windows.AddServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KitchenManager"
+        mc:Ignorable="d"
+       Title="Новая услуга" Height="280" Width="330" MinHeight="280" MinWidth="330"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <StackPanel Margin="15">
+        <TextBlock Text="Добавление услуги" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+
+        <TextBlock Text="Название услуги:"/>
+        <TextBox x:Name="TxtTitle" Height="25" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Стоимость:"/>
+        <TextBox x:Name="TxtPrice" Height="25" Margin="0,0,0,10"/>
+
+        <Button Content="Сохранить" Height="35" Margin="0,15,0,0" Click="BtnSave_Click"/>
+    </StackPanel>
+</Window>

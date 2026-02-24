@@ -1,0 +1,32 @@
+﻿<Window x:Class="KitchenManager.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сотрудник" Height="420" Width="300"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="{StaticResource MainBackground}">
+
+    <StackPanel Margin="15">
+        <TextBlock Text="Данные сотрудника" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+
+        <TextBlock Text="Фамилия:"/>
+        <TextBox Text="{Binding Surname}" Height="25" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Имя:"/>
+        <TextBox Text="{Binding Name}" Height="25" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Отчество:"/>
+        <TextBox Text="{Binding Patronymic}" Height="25" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Должность:"/>
+        <ComboBox x:Name="ComboPosition" 
+                  DisplayMemberPath="PositionName" 
+                  SelectedValuePath="ID_Position" 
+                  SelectedValue="{Binding ID_Position}"
+                  Height="25" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Телефон:"/>
+        <TextBox Text="{Binding Phone}" Height="25" Margin="0,0,0,10"/>
+
+        <Button Content="Сохранить" Height="35" Margin="0,15,0,0" Click="BtnSave_Click" Style="{StaticResource GreenBtnStyle}"/>
+    </StackPanel>
+</Window>
