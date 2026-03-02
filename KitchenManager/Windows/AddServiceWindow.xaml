@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KitchenManager"
         mc:Ignorable="d"
+         Icon="/Resources/unnamed.png" 
         Background="{StaticResource MainBackground}"
        Title="Новая услуга" Height="280" Width="330" MinHeight="280" MinWidth="330"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">

@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Клиент" Height="420" Width="300"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+         Icon="/Resources/unnamed.png" 
         Background="{StaticResource MainBackground}">
 
     <StackPanel Margin="15">

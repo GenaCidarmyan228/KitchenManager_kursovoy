@@ -4,6 +4,7 @@
         Title="Редактирование заказа" Height="460" Width="330" MinHeight="460" MinWidth="330"
         Background="{StaticResource MainBackground}"
         WindowStartupLocation="CenterScreen" 
+         Icon="/Resources/unnamed.png" 
         Loaded="Window_Loaded"
       >
 

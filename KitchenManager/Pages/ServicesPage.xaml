@@ -7,17 +7,19 @@
       mc:Ignorable="d" 
       
       d:DesignHeight="450" d:DesignWidth="800"
+        
       Title="Услуги" Loaded="Page_Loaded">
-
+    
     <Grid Background="White">
+       
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
-            <Button Content=" Назад" Width="80" Height="30" Margin="0,0,20,0" Click="BtnBack_Click" />
-            <Button Content="Добавить услугу" Width="150" Height="30" Margin="0,0,10,0" Click="BtnAdd_Click"/>
+
+            <Button Content="Добавить услугу" Width="150" Height="30" Margin="0,0,10,0" Click="BtnAdd_Click" Style="{StaticResource GreenBtnStyle}"/>
             <Button Content="Удалить" Width="100" Height="30" Click="BtnDelete_Click"/>
             
         </StackPanel>
